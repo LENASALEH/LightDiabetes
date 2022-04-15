@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Light Diabetes</string>
+    <string-array name="Type">
+        <item>Type one</item>
+        <item>Type two</item>
+        <item>Gestational</item>
+    </string-array>
+    <color name="BG">#F5F1FA</color>
+</resources>

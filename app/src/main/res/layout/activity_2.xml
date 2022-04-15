@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG"
+    tools:context=".Activity2">
+
+    <Button
+        android:id="@+id/Monitor"
+        android:layout_width="382dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Connect to Glucose Monitor"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/AddMeals"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Add my meals"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/Monitor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Activity"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Activity"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/Reports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Reports"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Reports"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/AddMeals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/InsulinDoses"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Insulin Doses"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/GlucoseLevel"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6C6A7D"
+        android:text="Glucose Level"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/InsulinDoses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/GlucoseLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/icons8_search_30" />
+
+    <EditText
+        android:id="@+id/SearchBar"
+        android:layout_width="321dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/GlucoseLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_home_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="60dp"
+        android:background="#4B6C6A7D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/icons8_stack_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_female_profile_30" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
