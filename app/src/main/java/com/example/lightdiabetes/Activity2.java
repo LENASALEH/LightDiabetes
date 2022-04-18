@@ -8,13 +8,12 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity2 extends AppCompatActivity {
-    Button btn;
-    Button btn2;
+    Button btn,btn2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-
         btn=findViewById(R.id.AddMeals);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,13 +23,14 @@ public class Activity2 extends AppCompatActivity {
             }
         } );
 
-        btn2=findViewById(R.id.InsulinDoses);
+        btn2=findViewById(R.id.GlucoseLevel);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), Activity6.class);
+                Intent intent = new Intent(getBaseContext(), Glucose2.class);
                 startActivity(intent);
             }
         } );
     }
+
 }
